@@ -1,0 +1,39 @@
+{
+"menu": [
+{
+"name": "Bedroom Sets",
+"price": 1299,
+"description": "Bedroom description.",
+"image": "https://www.coasterfurniture.com/wp-content/uploads/products/lifestyle/thumbs/224301KE-S3_21.jpg",
+"category": "Bedroom"
+},
+{
+"name": "Headboards",
+"price": 799,
+"description": "Headboards description.",
+"image": "https://www.coasterfurniture.com/wp-content/uploads/products/lifestyle/thumbs/316030T.jpg",
+"category": "Bedroom"
+},
+{
+"name": "Bookcases",
+"price": 20,
+"description": "Bookcases description.",
+"image": "https://www.coasterfurniture.com/wp-content/uploads/products/lifestyle/thumbs/805893.jpg",
+"category": "Office"
+},
+{
+"name": "Lighting",
+"price": 69,
+"description": "Lighting description.",
+"image": "https://www.coasterfurniture.com/wp-content/uploads/category-923288-NEW.jpg",
+"category": "Lighting"
+},
+{
+"name": "Desks",
+"price": 49,
+"description": "Desks description.",
+"image": "https://www.coasterfurniture.com/wp-content/uploads/products/lifestyle/thumbs/801455.jpg",
+"category": "Office"
+}
+]
+}
