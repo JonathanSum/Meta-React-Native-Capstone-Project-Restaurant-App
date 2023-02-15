@@ -35,16 +35,16 @@ const Main = ({ navigation }) => {
                 paddingLeft: 25,
               }}
             >
-              <Text style={styles.HeaderText}>Little Lemon</Text>
+              <Text style={styles.HeaderText}>Furnitue</Text>
               <View style={{ flexDirection: "row", paddingVertical: 30 }}>
                 <View>
-                  <Text style={styles.topTextHeader}>Chicago</Text>
+                  <Text style={styles.topTextHeader}>Company</Text>
                   <Text style={styles.topTextP}>
                     We are a family owned{"\n"}
-                    Mediterranean restaurant,{"\n"}
-                    focused on traditional{"\n"}
-                    recipes served with a{"\n"}
-                    modern twist.
+                    Furnitue restaurant,{"\n"}
+                    focused on office{"\n"}
+                    furniture or home{"\n"}
+                    furniture.
                   </Text>
                 </View>
 

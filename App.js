@@ -24,9 +24,9 @@ const Stack = createNativeStackNavigator();
 const ProfileAvatar = ({ avatar, navigation }) => {
   console.log("navigation", navigation);
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
-      {avatar}
-    </TouchableOpacity>
+    // <TouchableOpacity onPress={() => navigation.navigate("Profile")}>
+    { avatar }
+    // </TouchableOpacity>
   );
 };
 
@@ -119,13 +119,8 @@ export default function App() {
         ]}
       >
         <Image style={styles.imageHome} source={headerImage_white} />
-        {avatar && (
-          <ProfileAvatar
-            avatar={<Image style={styles.avatar} source={{ uri: avatar }} />}
-            navigation={navigation}
-          />
-        )}
-        {/* {avatar && <Image style={styles.avatar} source={{ uri: avatar }} />} */}
+
+        {avatar && <Image style={styles.avatar} source={{ uri: avatar }} />}
       </View>
     );
   };

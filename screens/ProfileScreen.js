@@ -105,16 +105,16 @@ const ProfileMain = ({ route, navigation }) => {
       try {
         const userData = await getProfile();
         setLogoutOn(true);
-        if (userData.length) {
-          setImage(userData[0].avatar);
-          onChangeFN(userData[0].firstName);
-          onChangeLN(userData[0].lastName);
-          onChangeEmail(userData[0].email);
-          onChangePhone(userData[0].phone);
-          setOrder(userData[0].check_statues === 1 ? true : false);
-          setPWChange(userData[0].check_pw_change === 1 ? true : false);
-          setSpecial(userData[0].check_special === 1 ? true : false);
-          setNews(userData[0].check_news_letter === 1 ? true : false);
+        if (userData.length == 1) {
+          setImage(userData[0]?.avatar);
+          onChangeFN(userData[0]?.firstName);
+          onChangeLN(userData[0]?.lastName);
+          onChangeEmail(userData[0]?.email);
+          onChangePhone(userData[0]?.phone);
+          setOrder(userData[0]?.check_statues === 1 ? true : false);
+          setPWChange(userData[0]?.check_pw_change === 1 ? true : false);
+          setSpecial(userData[0]?.check_special === 1 ? true : false);
+          setNews(userData[0]?.check_news_letter === 1 ? true : false);
         } else {
           // console.log("no profile: ", profile);   //for debugging
         }

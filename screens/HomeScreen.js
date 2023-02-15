@@ -23,9 +23,11 @@ import { getSectionListData, useUpdateEffect } from "../controller/utils";
 import { Searchbar } from "react-native-paper";
 import Filters from "./Filters";
 import { useHeaderHeight } from "@react-navigation/elements";
+// const API_URL =
+//   "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/capstone.json";
 const API_URL =
-  "https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/capstone.json";
-const sections = ["starters", "mains", "desserts", "drinks"];
+  "https://raw.githubusercontent.com/JonathanSum/demo1/main/data.json";
+const sections = ["Bedroom", "Office", "Lighting"];
 const HomeScreen = ({ navigation }) => {
   const [data, setData] = React.useState([]);
   const [searchBarText, setSearchBarText] = React.useState("");
@@ -49,7 +51,7 @@ const HomeScreen = ({ navigation }) => {
           const response = await fetch(API_URL);
           const json = await response.json();
           menuItems = json.menu;
-
+          console.log("menuItems", menuItems);
           // Storing into database
           saveMenuItems(menuItems);
         }
@@ -116,7 +118,7 @@ const HomeScreen = ({ navigation }) => {
             <Image
               style={styles.logo}
               source={{
-                uri: `https://github.com/Meta-Mobile-Developer-PC/Working-With-Data-API/raw/main/images/${image}`,
+                uri: `${image}`,
               }}
             />
           </View>
@@ -160,16 +162,16 @@ const HomeScreen = ({ navigation }) => {
         <View
           style={{ flex: 0.45, backgroundColor: "#495E57", paddingLeft: 25 }}
         >
-          <Text style={styles.HeaderText}>Little Lemon</Text>
+          <Text style={styles.HeaderText}>Furnitue</Text>
           <View style={{ flexDirection: "row" }}>
             <View>
-              <Text style={styles.topTextHeader}>Chicago</Text>
+              <Text style={styles.topTextHeader}>Company</Text>
               <Text style={styles.topTextP}>
                 We are a family owned{"\n"}
-                Mediterranean restaurant,{"\n"}
-                focused on traditional{"\n"}
-                recipes served with a{"\n"}
-                modern twist.
+                Furnitue restaurant,{"\n"}
+                focused on office{"\n"}
+                furniture or home{"\n"}
+                furniture.
               </Text>
             </View>
 
